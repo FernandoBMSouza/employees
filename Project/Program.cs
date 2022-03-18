@@ -53,6 +53,9 @@ namespace Project
                     System.Console.WriteLine("Valor Inválido!");
                 }
             }
+
+            System.Console.WriteLine();
+            System.Console.WriteLine("PAYMENTS: ");
             foreach (Employee employee in employees)
             {
                 System.Console.WriteLine($"{employee.Name} - $ {employee.Payment().ToString("F2", CultureInfo.InvariantCulture)}");
